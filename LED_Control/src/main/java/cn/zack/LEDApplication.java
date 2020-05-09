@@ -4,11 +4,11 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
- * @author cn.zack
+ * @author zack
  */
 @SpringBootApplication
-public class RaspberryApplication {
+public class LEDApplication {
     public static void main(String[] args) {
-        SpringApplication.run(RaspberryApplication.class, args);
+        SpringApplication.run(LEDApplication.class, args);
     }
 }

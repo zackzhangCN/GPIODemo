@@ -11,11 +11,11 @@ import org.springframework.stereotype.Service;
  * @author GPIO控制逻辑
  */
 @Service
-public class GPIO_Service {
+public class LED_Service {
     /**
      * 获取一个gpio控制器
      */
-    final GpioController gpioController = GPIO_Utils.getGpioController();
+    GpioController gpioController = GPIO_Utils.getGpioController();
 
     /**
      * 获取7,8引脚, 并设置初始状态为低电平

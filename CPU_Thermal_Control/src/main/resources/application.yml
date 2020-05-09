@@ -1,0 +1,7 @@
+server:
+  port: 8082
+
+# raspberry的cpu温度记录文件
+cpu:
+  thermal:
+    path: /sys/class/thermal/thermal_zone0/temp

@@ -1,6 +1,6 @@
 package cn.zack.controller;
 
-import cn.zack.service.GPIO_Service;
+import cn.zack.service.LED_Service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -12,20 +12,20 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @RequestMapping(path = "led")
-public class GPIO_Controller {
+public class LED_Controller {
 
     @Autowired
-    private GPIO_Service gpio_service;
+    private LED_Service LED_service;
 
     @GetMapping(path = "on")
     public String turnOn() {
-        String message = gpio_service.turnFun(1);
+        String message = LED_service.turnFun(1);
         return message;
     }
 
     @GetMapping(path = "off")
     public String turnOff() {
-        String message = gpio_service.turnFun(2);
+        String message = LED_service.turnFun(2);
         return message;
     }
 }

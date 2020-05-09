@@ -6,12 +6,16 @@
 	<groupId>cn.zack</groupId>
 	<artifactId>GPIO</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<modules>
+		<module>LED_Control</module>
+        <module>CPU_Thermal_Control</module>
+    </modules>
 
-	<!--jar包-->
-	<packaging>jar</packaging>
+	<!--pom-->
+	<packaging>pom</packaging>
 
 	<name>GPIODemo</name>
-	<description>create project to learn raspberry's gpio control</description>
+	<description>create this demo to learn how to use the raspberry's gpio</description>
 
 	<!--springboot parent-->
 	<parent>
@@ -49,6 +53,5 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
-		<finalName>gpio</finalName>
 	</build>
 </project>
